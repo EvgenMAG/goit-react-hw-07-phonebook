@@ -45,10 +45,10 @@ const filterReducer = createReducer(initialFilter, {
 
 // const itemsReducer = (state = initialState, action) => {
 //   switch (action.type) {
-//     case actionsTypes.ADDCONTACT:
+//     case actionsTypes.ADD_CONTACT:
 //       return [...state, action.payload];
 
-//     case actionsTypes.REMOVECONTACT:
+//     case actionsTypes.REMOVE_CONTACT:
 //       return state.filter(({ id }) => id !== action.payload);
 
 //     default:
@@ -58,7 +58,7 @@ const filterReducer = createReducer(initialFilter, {
 
 // const filterReducer = (state = initialFilter, action) => {
 //   switch (action.type) {
-//     case actionsTypes.CONTACTFILTER:
+//     case actionsTypes.CONTACT_FILTER:
 //       return action.payload;
 
 //     default:

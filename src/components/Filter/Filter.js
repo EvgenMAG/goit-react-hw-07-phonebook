@@ -5,6 +5,7 @@ import s from './Filter.module.css';
 import ProtoTypes from 'prop-types';
 
 const Filter = ({ filteredName, onChangeInput }) => {
+  console.log(filteredName);
   return (
     <div className={s.filter__container}>
       <h3 className={s.filter__title}>Find contact by name</h3>
@@ -24,10 +25,11 @@ Filter.protoTypes = {
 };
 
 const mapStateToProps = state => ({
-  filteredName: Selectors.getFilterValue,
+  filteredName: Selectors.getFilterValue(state),
 });
-const mapDispatchToProps = dispatch => ({
-  onChangeInput: Action.filterContacts,
-});
+
+const mapDispatchToProps = {
+  onChangeInput: e => Action.filterContacts(e.target.value),
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filter);

@@ -1,7 +1,7 @@
-const ADDCONTACT = 'contact/Add';
-const REMOVECONTACT = 'contact/Remove';
-const CONTACTFILTER = 'contact/Filter';
+const ADD_CONTACT = 'contact/Add';
+const REMOVE_CONTACT = 'contact/Remove';
+const CONTACT_FILTER = 'contact/Filter';
 
-const actionsTypes = { ADDCONTACT, REMOVECONTACT, CONTACTFILTER };
+const actionsTypes = { ADD_CONTACT, REMOVE_CONTACT, CONTACT_FILTER };
 
 export default actionsTypes;
